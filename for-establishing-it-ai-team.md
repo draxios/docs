@@ -1,4 +1,4 @@
-# For establishing an IT AI group with our firm 
+# For establishing an IT AI group within a business 
 
 ## Executive Summary
 
