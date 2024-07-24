@@ -1,22 +1,38 @@
-# For establishing an IT AI group within a business 
+# For establishing an IT AI group within a company
 
 ## Executive Summary
 
-Artificial Intelligence (AI) is revolutionizing industries by enhancing productivity, accelerating learning, and providing powerful tools for decision-making. In the financial sector, AI is not a replacement for human expertise but a complementary asset that amplifies the capabilities of professionals. It demystifies complex data, provides actionable insights, and automates routine tasks, allowing human talent to focus on strategic and creative endeavors.
+AI is not a replacement for anything or anyone. AI is not a blackbox. AI is a producitivy and learning accelerant. It's a tool that should be reviewed, and if found useful, ultizlied by companies within strict guardrails.
 
-This whitepaper outlines a comprehensive plan for establishing a new AI team within our firm, leveraging cutting-edge technologies such as Azure OpenAI and AWS SageMaker. The primary objective is to build a robust AI presence from the ground up, ensuring that our firm is well-positioned to harness the transformative potential of AI technologies. 
+AI is a complementary asset that amplifies the capabilities of professionals. It demystifies complex data, provides actionable insights, allowing human talent to focus on strategic and creative endeavors.
 
-### The Case for AI in Financial Services
+This whitepaper outlines a comprehensive plan for establishing a new AI team within our firm, leveraging cutting-edge technologies such as Azure OpenAI and AWS SageMaker. The primary objective is to build a robust AI presence from the ground up, ensuring that our firm is well-positioned to harness the transformative potential of AI technologies.
 
-AI has the potential to significantly impact the financial industry in several key areas:
+While this paper wasn't written by AI, it was used very closely in its creation, acting as a guide, a editor, a formatter. A true accelerant for the creation of an opinion to suggest its own usage more openly.
 
-1. **Operational Efficiency**: AI can automate repetitive and mundane tasks, reducing operational costs and minimizing human error. For instance, JP Morgan's Contract Intelligence (COiN) platform uses AI to review documents, saving 360,000 hours of work annually .
+### The Case for AI in Financial Services and Information Technology
 
-2. **Customer Experience**: AI-driven chatbots and virtual assistants can provide personalized and instant customer support, improving client satisfaction and retention. Bank of America’s Erica chatbot has over 15 million users, handling millions of customer queries effectively .
+AI has the potential to significantly impact the financial and IT industry in several key areas:
 
-3. **Risk Management and Fraud Detection**: AI systems can analyze vast amounts of transaction data in real-time, identifying and mitigating fraud and compliance risks more effectively than traditional methods. According to a McKinsey report, AI has the potential to reduce fraud detection costs by up to 20% .
+## Financial Oppertunites
+1. **Operational Efficiency**: AI can automate repetitive and mundane tasks, reducing operational costs and minimizing human error. For instance, JP Morgan's Contract Intelligence (COiN) platform uses AI to review documents, saving 360,000 hours of work annually.
 
-4. **Predictive Analytics and Insights**: AI can analyze historical data to predict future trends, helping firms make informed decisions. For example, BlackRock uses AI to analyze millions of data points to identify investment opportunities .
+2. **Customer Experience**: AI-driven chatbots and virtual assistants can provide personalized and instant customer support, improving client satisfaction and retention. Bank of America’s Erica chatbot has over 15 million users, handling millions of customer queries effectively.
+
+3. **Risk Management and Fraud Detection**: AI systems can analyze vast amounts of transaction data in real-time, identifying and mitigating fraud and compliance risks more effectively than traditional methods. According to a McKinsey report, AI has the potential to reduce fraud detection costs by up to 20%.
+
+4. **Predictive Analytics and Insights**: AI can analyze historical data to predict future trends, helping firms make informed decisions. For example, BlackRock uses AI to analyze millions of data points to identify investment opportunities.
+
+## IT Oppertunites
+1. **Code Review**: AI can help review code, give architetchure reviews, structuring.
+
+2. **Documentation**: AI-driven documenation creation can help document less-known projects and code, or free up employees to not have to write tickets and documentation.
+
+3. **Templating**: AI can analyze code and create templates and forms for easy of use in automation.
+
+4. **Debugging**: AI can help debug errors in real-time or in the IDE.
+
+5. **Code Generation**: AI can help with boilerplate code functions, logic examples, API calls, pure code reference.
 
 ### Leveraging Azure OpenAI and AWS SageMaker
 
