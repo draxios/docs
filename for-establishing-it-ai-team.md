@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-AI is not a replacement for anything or anyone. AI is not a blackbox. AI is a producitivy and learning accelerant. It's a tool that should be reviewed, and if found useful, ultizlied by companies within strict guardrails.
+AI is not a replacement for anything or anyone. AI is not a blackbox. AI is a productivity and learning accelerant. It's a tool that should be reviewed, and if found useful, utilized by companies within strict guardrails.
 
 AI is a complementary asset that amplifies the capabilities of professionals. It demystifies complex data, provides actionable insights, allowing human talent to focus on strategic and creative endeavors.
 
