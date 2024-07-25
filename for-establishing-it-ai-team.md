@@ -25,6 +25,8 @@ Artificial Intelligence (AI) stands at the forefront of technological innovation
 
 4. **Predictive Analytics and Insights**: AI can analyze historical data to predict future trends, helping firms make informed decisions. For instance, BlackRock uses AI to analyze millions of data points to identify investment opportunities. By leveraging AI for predictive analytics, our firm can gain deeper insights into market trends, customer behavior, and investment prospects, driving better decision-making and strategic planning.
 
+5. **Training**: AI can be used to train employees on everything under the sun seemlessly while also testing critcal and abstract thinking.
+
 ### IT Opportunities
 
 1. **Code Review**: AI can assist in code reviews, providing architecture recommendations and ensuring adherence to best practices. This can significantly improve code quality and reduce the time required for manual reviews.
@@ -36,6 +38,10 @@ Artificial Intelligence (AI) stands at the forefront of technological innovation
 4. **Debugging**: AI-powered debugging tools can identify and resolve errors in real-time or within the integrated development environment (IDE), reducing downtime and improving the overall development experience.
 
 5. **Code Generation**: AI can generate boilerplate code functions, logic examples, and API calls, providing developers with a solid starting point and accelerating the development process.
+
+6. **Training**: AI can be used to train employees on everything under the sun seemlessly while also testing critcal and abstract thinking.
+
+7. **Customer Experience**: AI-driven chatbots and virtual assistants can provide personalized and instant customer support, around the clock, and can be used to create tickets and or other simple operational work.
 
 ### Leveraging Azure OpenAI and AWS SageMaker
 
