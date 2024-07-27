@@ -4,7 +4,7 @@
 
 Artificial Intelligence (AI) is not a replacement for anything or anyone. AI is not a black box. AI is a productivity and learning accelerant. It’s a tool that should be reviewed, and if found useful, utilized by companies within strict guardrails.
 
-AI is a complementary asset that amplifies the capabilities of professionals. It demystifies complex data, provides actionable insights, and allows human talent to focus on strategic and creative endeavors.
+AI is a complementary asset, it amplifies the capabilities of the professional you we already have. It can demystifiy complex data, provides insights, and allow human talent to focus on strategic and creative endeavors.
 
 This whitepaper outlines a comprehensive plan for establishing a new AI team within our firm, leveraging cutting-edge technologies such as Azure OpenAI and AWS SageMaker. The primary objective is to build a robust AI presence from the ground up, ensuring that our firm is well-positioned to harness the transformative potential of AI technologies.
 
