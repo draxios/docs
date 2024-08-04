@@ -14,7 +14,7 @@ The platform will utilize Terraform for IaC, with code hosted in Azure DevOps re
 
 ### Example structure (TBD):
 ```
-StokerINC/
+Atari/
   ├── AgentPool.tf
   ├── Pong/
       ├── LibraryGroups
