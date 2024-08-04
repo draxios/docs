@@ -17,9 +17,9 @@ The platform will utilize Terraform for IaC, with code hosted in Azure DevOps re
 Atari/
   ├── AgentPool.tf
   ├── Pong/
-      ├── LibraryGroups
+      ├── LibraryGroups/
           └── VariableGroup.tf
-      ├── Repos
+      ├── Repos/
           ├── Repo.tf
           ├── ReposPolicy.tf
           ├── Pipeline.tf
