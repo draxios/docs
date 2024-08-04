@@ -12,14 +12,21 @@ The platform will utilize Terraform for IaC, with code hosted in Azure DevOps re
 - **Organization Folder**: Contains project-level properties and configurations.
 - **Project Folder**: Includes repositories, pipelines, policies, and other resources.
 
-### Example structure:
+### Example structure (TBD):
 ```
 StokerINC/
+  ├── AgentPool.tf
   ├── Pong/
-      ├── Deploy/
-          └── DeployPolicy.tf
-      ├── Repo.tf
-      ├── ProjectProperties.tf
+      ├── LibraryGroups
+          └── VariableGroup.tf
+      ├── Repos
+          ├── Repo.tf
+          ├── ReposPolicy.tf
+          ├── Pipeline.tf
+          └── PipelinesPolicy.tf
+      ├── User.tf
+      ├── Group.tf
+      └── Pong.tf
 ```
 
 ## 2. Terraform Modules
