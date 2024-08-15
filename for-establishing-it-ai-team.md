@@ -1,4 +1,4 @@
-# For Establishing an IT AI Group Within a Company
+# For Establishing an Information Technology AI Group Within a Company
 
 ## Executive Summary
 
@@ -10,11 +10,15 @@ This whitepaper outlines a comprehensive plan for establishing a new AI team wit
 
 While this paper wasn’t written by AI, AI was used very closely in its creation, acting as a guide, an editor, and a formatter. A true accelerant for the creation of an opinion to suggest its own usage more openly.
 
-## Introduction: The Case for AI in Financial Services and Information Technology
+## Introduction: The Case for AI
 
 Artificial Intelligence (AI) stands at the forefront of technological innovation, offering unparalleled opportunities for financial services and IT industries. As the pace of digital transformation accelerates, firms that embrace AI can unlock significant competitive advantages, driving efficiency, enhancing customer experiences, and fostering innovation. This whitepaper aims to persuade leadership of the critical need to establish an AI presence within our firm, leveraging the powerful capabilities of Azure OpenAI and AWS SageMaker.
 
-### Financial Opportunities
+### Note On This Paper
+
+This is not a paper focusing on the benefits for the financial aspects of the firm. This paper is more focused on a general AI presence and what that can mean for the Information Technology part of the firm.
+
+### Financial Opportunities (General)
 
 1. **Operational Efficiency**: AI has the potential to automate repetitive and mundane tasks, reducing operational costs and minimizing human error. For example, JP Morgan’s Contract Intelligence (COiN) platform uses AI to review legal documents, saving an estimated 360,000 hours of work annually. Such automation not only cuts costs but also frees up human resources to focus on more strategic tasks, enhancing overall productivity.
 
@@ -38,7 +42,9 @@ Artificial Intelligence (AI) stands at the forefront of technological innovation
 
 5. **Code Generation**: AI can generate boilerplate code functions, logic examples, and API calls, providing developers with a solid starting point and accelerating the development process.
 
-6. **Training**: AI can be used to train employees seamlessly on various topics while also testing critical and abstract thinking.
+5. **Code Migration**: AI can be used to migrate code from one product to another, to translate different programming languages, and upgrade dependencies and frameworks.
+
+6. **Training**: AI can be used to train employees seamlessly on various topics, including best practices, security, while also testing critical and abstract thinking.
 
 7. **Customer Experience**: AI-driven chatbots and virtual assistants can provide personalized and instant customer support around the clock and can be used to create tickets and perform other simple operational tasks.
 
@@ -46,9 +52,9 @@ Artificial Intelligence (AI) stands at the forefront of technological innovation
 
 By utilizing Azure OpenAI and AWS SageMaker, our firm can access state-of-the-art AI tools and infrastructure:
 
-- **Azure OpenAI**: Offers powerful natural language processing capabilities, enabling advanced data analysis and customer interaction solutions. It integrates seamlessly with other Azure services, providing a comprehensive AI ecosystem that supports our firm’s needs.
+- **Azure OpenAI**: Offers powerful natural language processing capabilities, enabling advanced data analysis and customer interaction solutions. It integrates seamlessly with other Azure services, providing a comprehensive AI ecosystem that supports our firm’s needs. As it relates to our firm, this is the best-in-class option but would require more lead-time to setup our Azure footprint more officially.
 
-- **AWS SageMaker**: Provides a robust platform for building, training, and deploying machine learning models. It supports various machine learning frameworks and offers the scalability required for large-scale AI initiatives, ensuring that our AI solutions can grow with our firm.
+- **AWS SageMaker**: Provides a robust platform for building, training, and deploying machine learning models. It supports various machine learning frameworks and offers the scalability required for large-scale AI initiatives, ensuring that our AI solutions can grow with our firm. As it relates to our firm, we currently have a more mature AWS presence, which could make a faster-to-market service.
 
 ### Strategic Objectives
 
