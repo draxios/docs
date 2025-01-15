@@ -1,4 +1,4 @@
-# **End-to-end guide** for creating a **brand-new Angular project** with a single component—`AdoProjectFormComponent`—that posts JSON data to **AWS API Gateway** endpoint.
+# **Guide** for creating a **new Angular project** with a single component—`AdoProjectFormComponent`—that posts JSON data to **AWS API Gateway** endpoint.
 
 1. **Project creation**  
 2. **Environment configuration**  
