@@ -131,7 +131,7 @@ We are always looking for new contributions and improvements!
 
 ## License
 
-This repository is licensed under the [The Unlicense](LICENSE). Feel free to use and modify these documents to fit your needs; however, we request that you include attribution when sharing your work.
+This repository is licensed under the [The Unlicense](LICENSE). Feel free to use and modify these documents to fit your needs; cause it's public domain!
 
 ---
 
