@@ -1,6 +1,6 @@
 # Documentation Repository
 
-Welcome to the **Documentation** repository! This is your one-stop shop for various how-tos, IT process documentation, and workflows. The materials here range from simple, everyday tasks to advanced tutorials, so whether you’re just starting out or you’re a seasoned pro, we hope these docs will come in handy.
+Welcome to the **Documentation[docs]** repository! This is your one-stop shop for various how-tos, IT process documentation, and workflows. The materials here range from simple, everyday tasks to advanced tutorials, so whether you’re just starting out or you’re a seasoned pro, we hope these docs will come in handy.
 
 ## Table of Contents
 
