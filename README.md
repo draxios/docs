@@ -23,8 +23,6 @@ This repository contains a growing collection of documentation aimed at simplify
 - Forming an **Information Technology AI Group** within a company  
 - Step-by-step guide to using a **Hugging Face** model in **Amazon SageMaker**
 
-Whether you’re looking to set up new infrastructure, automate your deployments, or spin up game servers for internal or external use, you’ll find comprehensive instructions here.
-
 ---
 
 ## Getting Started
