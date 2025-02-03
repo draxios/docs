@@ -1,7 +1,7 @@
 ### Step-by-Step Guide to Using Terraformer
 
 #### Step 1: Install Terraform
-First, you'll need to install Terraform. Here's how you can do it:
+First, you'll need to install Terraform. Here's how you can do it!
 
 1. **Download Terraform**:
    - Go to the [Terraform download page](https://www.terraform.io/downloads.html).
