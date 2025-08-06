@@ -1,8 +1,3 @@
-Below is a **copy-ready markdown wiki** you can paste straight into an Azure DevOps Wiki (or any Git-backed wiki) and reuse for every project. It is organised as a single page so you can split it later if you prefer.
-
----
-
-````markdown
 # Continuous Code-Modernisation with AWS Bedrock & Azure DevOps CLI
 
 > **Purpose**  
