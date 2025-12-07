@@ -1,0 +1,401 @@
+Hello Old Friend, good to see you again,
+
+You are a world-class principal software engineer, performance specialist, and product architect.
+Your mission is to design and implement an enterprise-grade C# console application named cabinet—a high-performance log reader, ingester, indexer, and query engine inspired by Splunk’s usability and power, but optimized for game server logs.
+
+Product Vision
+
+cabinet is the most powerful, flexible, fast, and slick log intelligence console app ever built for:
+
+SteamCMD logs
+
+SourceMod logs
+
+Left 4 Dead 2 dedicated server logs
+
+And any arbitrary text log folders.
+
+It must handle massive volumes (millions of lines) with excellent ergonomics, elegant output, and thoughtful default workflows.
+
+Non-Negotiable Goals
+
+Performance-first: low memory, streaming, parallelizable ingestion, fast search.
+
+Best-in-class CLI UX: clean commands, discoverable help, smart defaults.
+
+Modular architecture: parsers, detectors, storage, and queries are plugins/modules.
+
+Two operating modes:
+
+Direct Read Mode: scan and query raw files without indexing.
+
+Indexed Mode: ingest -> normalize -> store -> query fast.
+
+Slick terminal UI where appropriate (tables, progress, highlights).
+
+Tech Constraints
+
+Language: C#
+
+Runtime: latest stable LTS (assume .NET 8 unless a newer LTS is specified)
+
+Must run on Windows and Linux.
+
+Prefer minimal external dependencies, but use best-in-class libraries when justified.
+
+Use async/await, Channels, Pipelines, Span/Memory, and efficient IO patterns.
+
+High-Level Architecture
+
+Implement clean, layered design:
+
+1) CLI Layer
+
+Command routing
+
+Validation
+
+Rich help
+
+Output formatting (table/json/ndjson/csv)
+
+Example-first docs
+
+2) Domain Model
+
+LogEvent normalized record:
+
+Timestamp
+
+SourceType (SteamCMD, SourceMod, L4D2, Generic)
+
+ServerId / Host
+
+Severity
+
+RawLine
+
+Fields dictionary (structured extractions like SteamID, Map, PlayerName, Action, Reason)
+
+Tags
+
+3) Ingestion + Parsing
+
+File discovery + filter pipeline
+
+Incremental ingestion with checkpoints
+
+Pluggable parser system:
+
+ILogParser
+
+ParserRegistry
+
+Built-in parsers for:
+
+L4D2 server logs
+
+SourceMod logs
+
+SteamCMD update logs
+
+Generic fallback parser that still extracts timestamps when possible.
+
+4) Storage/Index
+Provide two options as interchangeable implementations:
+
+Lightweight embedded: SQLite or similar
+
+High-speed search index: Lucene.NET-like approach if needed
+You must pick one as default with an interface that allows switching.
+
+Store:
+
+raw line
+
+normalized fields
+
+indexed tokens
+
+time-based partitions
+
+file origin metadata
+
+5) Query Engine
+Implement a simple Splunk-like pipeline DSL usable from CLI:
+
+Examples:
+
+cabinet query "error OR failed | stats count by source"
+
+cabinet query "vac | where severity >= warn | sort -time | head 50"
+
+cabinet query "admin action=ban | stats count by admin, reason"
+
+cabinet query "scumscan | top 20 term"
+
+Minimum pipeline commands:
+
+search (implicit)
+
+where
+
+fields
+
+stats (count, min, max, avg, distinct)
+
+top
+
+sort
+
+head / tail
+
+timechart (basic)
+
+export
+
+6) Detection Suites
+Implement three headline modules with strong defaults and extensibility:
+
+A) scumscan
+
+Purpose: detect toxic behavior signals in chat/log lines:
+
+racism, bullying, harassment, hate speech, slurs, threats
+Implementation:
+
+Rule-based detectors first (regex + weighted keyword lists)
+
+Optional pluggable ML hook (interface only; no heavy model requirement)
+
+Severity scoring and explainability
+
+Include safe sample rules without listing explicit slurs in tests.
+Outputs:
+
+summarized scoreboard per player/SteamID
+
+sample lines with context windows
+
+trend over time
+
+B) hackwatch
+
+Purpose: suspicious patterns:
+
+VAC or anti-cheat messages
+
+impossible events
+
+repeated exploit signatures
+
+abnormal command usage rate
+Implementation:
+
+rules + anomaly heuristics
+
+baseline-per-server option
+Outputs:
+
+“suspicion report”
+
+timeline + top patterns
+
+C) adminabuse
+
+Purpose: detect potentially abusive moderation:
+
+excessive kicks/slaps/bans
+
+bans without reasons
+
+repeated targeting of same player
+
+outlier rate per admin
+Implementation:
+
+parse SourceMod admin actions
+
+compute per-admin stats vs server baseline
+Outputs:
+
+ranked admin risk list
+
+evidence lines
+
+Core User Workflows (Must Implement)
+
+Peek huge logs fast
+
+cabinet peek <path> --lines 200 --reverse
+
+must be near-instant for big files
+
+Tail with filtering
+
+cabinet tail <path> --follow --where "error OR vac"
+
+Ingest
+
+cabinet ingest <folder> --profile l4d2 --recursive
+
+incremental ingestion with checkpoint DB
+
+Query
+
+Works against both raw and indexed mode:
+
+--mode direct
+
+--mode indexed
+
+Report
+
+cabinet report scumscan --last 7d
+
+cabinet report adminabuse --server myserver
+
+Performance Requirements
+
+Avoid loading full files into memory.
+
+Use streaming readers.
+
+Use batching.
+
+Use parallel parsing with bounded channel backpressure.
+
+Support file rotation and rolling logs.
+
+Use memory-mapped or efficient reverse-reading for peek --reverse.
+
+Configuration
+
+Support:
+
+cabinet.config.json
+
+Profiles:
+
+steamcmd
+
+sourcemod
+
+l4d2
+
+generic
+Include default config in repo.
+
+Plugin Model
+
+Allow adding new:
+
+parsers
+
+detectors
+
+output formats
+via:
+
+assembly scanning in /plugins
+
+versioned contracts
+
+Output UX
+
+Use a rich console library if appropriate to provide:
+
+tables
+
+color-coded severity
+
+progress spinners/bars
+
+collapsible summaries
+But keep JSON and NDJSON machine-friendly options.
+
+Deliverables You Must Produce
+
+A concise architecture overview.
+
+A folder/solution structure.
+
+The full working code for:
+
+CLI
+
+ingestion engine
+
+parser registry
+
+built-in parsers (SteamCMD, SourceMod, L4D2)
+
+storage/index implementation (default)
+
+query DSL engine (minimal but functional)
+
+scumscan/hackwatch/adminabuse v1
+
+A README with real-world examples.
+
+A small synthetic test log set that does not contain explicit slurs.
+
+Unit tests for:
+
+parsing
+
+query operators
+
+detection scoring
+
+Naming + Style
+
+App name: cabinet
+
+Theme: no gimmicks, professional, “enterprise-grade but gamer-aware”
+
+Code style: clean, documented, SOLID, testable
+
+Keep it fast and elegant.
+
+CLI Command Skeleton (Minimum)
+
+Implement at least these commands:
+
+cabinet help
+
+cabinet version
+
+cabinet peek <path>
+
+cabinet tail <path>
+
+cabinet ingest <path>
+
+cabinet query <expression>
+
+cabinet report <suite>
+
+cabinet config init
+
+cabinet plugins list
+
+Examples to Include in README
+
+Installing/running
+
+Ingesting L4D2 + SourceMod logs
+
+Running:
+
+scumscan weekly summary
+
+hackwatch for VAC-related searches
+
+adminabuse audit
+
+Quality Bar
+
+This is not a demo.
+This is a production-quality foundation for an enterprise-grade log intelligence product.
+Prioritize architecture and performance correctness over feature bloat, but still deliver “killer” features.
